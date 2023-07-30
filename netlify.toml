@@ -1,0 +1,3 @@
+[build]
+  publish = "." # Set the publish directory to the root of the project
+  command = "" # No build command needed for a simple HTML/JS project
