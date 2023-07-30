@@ -14,10 +14,10 @@ $(document).ready(function() {
         // Clear the existing suggestions
         suggestionsList.empty();
 
-        // Make an API request to Google Autocomplete API
+        // Make an API request to Google Autocomplete API using JSONP
         $.ajax({
             url: BASE_URL,
-            dataType: 'json',
+            dataType: 'jsonp', // Use JSONP to bypass CORS
             data: {
                 input: query,
                 key: API_KEY
